@@ -1,0 +1,13 @@
+workspace(name = "chessai")
+
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
+git_repository(
+    name = "hedron_compile_commands",
+    commit = "928eb070ac19531b8971d347cb6962f6b2ff6b2a",
+    remote = "https://github.com/hedronvision/bazel-compile-commands-extractor.git",
+)
+
+load("@hedron_compile_commands//:workspace_setup.bzl", "hedron_compile_commands_setup")
+
+hedron_compile_commands_setup()

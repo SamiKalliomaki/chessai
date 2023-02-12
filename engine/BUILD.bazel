@@ -1,0 +1,8 @@
+cc_library(
+    name = "engine",
+    srcs = glob([
+        "*.cc",
+        "*.h",
+    ]),
+    visibility = ["//visibility:public"],
+)

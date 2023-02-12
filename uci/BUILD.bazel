@@ -1,0 +1,10 @@
+cc_binary(
+    name = "chessai-uci",
+    srcs = glob([
+        "*.cc",
+        "*.h",
+    ]),
+    deps = [
+        "//engine",
+    ],
+)
